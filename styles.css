@@ -1,14 +1,29 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container {
     max-width: 400px;
     background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: auto;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff;
 }
 
 .searchContainer {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .inputField {
@@ -18,7 +33,7 @@
     border-radius: 5px;
 }
 
-.searchBtn {
+#searchBtn {
     padding: 10px;
     background: #007bff;
     color: white;
@@ -27,12 +42,27 @@
     border-radius: 5px;
 }
 
+#searchBtn:hover {
+    background: #0056b3;
+}
 
 #weatherContainer {
-    display: none; /* Hide until data is available to display */
+    display: none;
+    background: #f7faff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
 }
 
 #errorMessage {
     color: red;
     font-weight: bold;
+    margin-top: 15px;
 }
